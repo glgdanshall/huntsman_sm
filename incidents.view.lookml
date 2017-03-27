@@ -1,10 +1,46 @@
 - view: incidents
-  sql_table_name: dbo.INCIDENTSM1
+  sql_table_name: dbo.PROBSUMMARYM1
   fields:
   - dimension: id
     primary_key: true
     type: string
-    sql: ${TABLE}.INCIDENT_ID
+    sql: ${TABLE}.NUMBER
+    
+  - dimension: category
+    type: string
+    sql: ${TABLE}.CATEGORY
+    
+  - dimension: open_time
+    type: time
+    timeframes: [time, date, week, month, year]
+    sql: ${TABLE}.OPEN_TIME
+    
+  - dimension: opened_by
+    type: string
+    sql: ${TABLE}.OPENED_BY
+    
+  - dimension: priority
+    type: number
+    sql: ${TABLE}.PRIORITY_CODE
+    
+  - dimension: urgency
+    type: number
+    sql: ${TABLE}.SEVERITY
+    
+  - dimension: impact
+    type: number
+    sql: ${TABLE}.INITIAL_IMPACT
+  
+  - dimension: assignment
+    type: string
+    sql: ${TABLE}.ASSIGNMENT
+  
+  - dimension: affected_ci
+    type: string
+    sql: ${TABLE}.LOGICAL_NAME
+    
+  
+    
 # # You can specify the table name if it's different from the view name:
 #   sql_table_name: my_schema_name.incidents
 #
