@@ -39,6 +39,8 @@
     type: string
     sql: ${TABLE}.LOGICAL_NAME
     
+  - measure: count
+    type: count
   
     
 # # You can specify the table name if it's different from the view name:
