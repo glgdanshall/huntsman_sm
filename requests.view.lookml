@@ -60,7 +60,7 @@
     
   - dimension: open_closed
     type: string
-    sql: ${TABLE}.OPEN
+    sql: ${TABLE}.[OPEN]
     
   - dimension: subcategory
     type: string
