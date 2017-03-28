@@ -58,6 +58,10 @@
     type: string
     sql: ${TABLE}.PROBLEM_STATUS
     
+  - dimension: open_closed
+    type: string
+    sql: ${TABLE}.STATUS
+    
   - measure: count
     type: count
   
