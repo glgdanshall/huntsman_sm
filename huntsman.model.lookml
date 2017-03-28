@@ -6,3 +6,10 @@
 # EXPLORES #
 
 - explore: incidents
+
+- explore: interactions
+  joins:
+    - join: interactions_a1
+      foreign_key: interactions.id
+      
+- explore: requests
