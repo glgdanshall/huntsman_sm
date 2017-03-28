@@ -62,9 +62,9 @@
     type: string
     sql: ${TABLE}.OPEN
     
-  - dimension: area
+  - dimension: subcategory
     type: string
-    sql: ${TABLE}.PRODUCT_TYPE
+    sql: ${TABLE}.SUBCATEGORY
     
   - dimension: update_time
     type: time
