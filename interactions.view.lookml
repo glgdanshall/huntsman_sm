@@ -56,7 +56,7 @@
   
   - dimension: status
     type: string
-    sql: ${TABLE}.STATUS
+    sql: ${TABLE}.OPEN
     
   - dimension: open_closed
     type: string
