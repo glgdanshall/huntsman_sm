@@ -1,5 +1,5 @@
 - view: requests
-  sql_table_name: dbo.REQUESTSM1
+  sql_table_name: dbo.REQUESTM1
   fields:
   - dimension: id
     primary_key: true
