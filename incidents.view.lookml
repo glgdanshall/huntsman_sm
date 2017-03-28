@@ -62,6 +62,10 @@
     type: string
     sql: ${TABLE}.STATUS
     
+  - dimension: area
+    type: string
+    sql: ${TABLE}.PRODUCT_TYPE
+    
   - measure: count
     type: count
   
