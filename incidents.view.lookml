@@ -45,6 +45,14 @@
   - dimension: affected_ci
     type: string
     sql: ${TABLE}.LOGICAL_NAME
+  
+  - dimension: hpe_affected_ci
+    sql_case:
+      SM: ${TABLE}.LOGICAL_NAME="HP SERVICE MANAGER CLIENT 9"
+      AM: ${TABLE}.LOGICAL_NAME="HP ASSET MANAGER 9"
+      OO: ${TABLE}.LOGICAL_NAME="HP OPERATIONS ORCHESTRATION RAS 9"
+      UCMDB: ${TABLE}.LOGICAL_NAME="HP UNIVERSAL CMDB SERVER 10 X64"
+      Other: ${TABLE}.LOGICAL_NAME=*
     
   - measure: count
     type: count
