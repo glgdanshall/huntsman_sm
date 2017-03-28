@@ -26,10 +26,9 @@
   - dimension: priority_text
     sql_case:
       Low: ${TABLE}.PRIORITY_CODE=4
-      Critical: ${TABLE}.PRIORITY_CODE=1
-      High: ${TABLE}.PRIORITY_CODE=2
       Average: ${TABLE}.PRIORITY_CODE=3
-      
+      High: ${TABLE}.PRIORITY_CODE=2
+      Critical: ${TABLE}.PRIORITY_CODE=1
     
   - dimension: urgency
     type: number
