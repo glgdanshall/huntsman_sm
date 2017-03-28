@@ -71,6 +71,11 @@
     timeframes: [time, date, week, month, year]
     sql: ${TABLE}.UPDATE_TIME
     
+  - dimension: close_time
+    type: time
+    timeframes: [time, date, week, month, year]
+    sql: ${TABLE}.CLOSE_TIME
+    
   - measure: count
     type: count
   
