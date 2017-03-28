@@ -76,6 +76,10 @@
     timeframes: [time, date, week, month, year]
     sql: ${TABLE}.CLOSE_TIME
     
+  - dimension: phase
+    type: string
+    sql: ${TABLE}.CURRENT_PHASE
+    
   - measure: count
     type: count
   
