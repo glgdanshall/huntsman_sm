@@ -52,7 +52,7 @@
       AM: ${TABLE}.LOGICAL_NAME="HP ASSET MANAGER 9"
       OO: ${TABLE}.LOGICAL_NAME="HP OPERATIONS ORCHESTRATION RAS 9"
       UCMDB: ${TABLE}.LOGICAL_NAME="HP UNIVERSAL CMDB SERVER 10 X64"
-      Other: ${TABLE}.LOGICAL_NAME=*
+      Other:
     
   - measure: count
     type: count
