@@ -53,6 +53,10 @@
       OO: ${TABLE}.LOGICAL_NAME='HP OPERATIONS ORCHESTRATION RAS 9'
       UCMDB: ${TABLE}.LOGICAL_NAME='HP UNIVERSAL CMDB SERVER 10 X64'
       else: Other
+  
+  - dimension: status
+    type: string
+    sql: ${TABLE}.PROBLEM_STATUS
     
   - measure: count
     type: count
