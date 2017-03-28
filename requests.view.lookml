@@ -62,8 +62,8 @@
     type: string
     sql: ${TABLE}.[OPEN]
     sql_case:
-      Open: ${TABLE}.[OPEN]=t
-      CLOSED: ${TABLE}.[OPEN]=f
+      Open: ${TABLE}.[OPEN]='t'
+      CLOSED: ${TABLE}.[OPEN]='f'
     
   - dimension: subcategory
     type: string
