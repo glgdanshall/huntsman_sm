@@ -40,7 +40,7 @@
   
   - dimension: assignment
     type: string
-    sql: ${TABLE}.ASSIGNMED_GROUP
+    sql: ${TABLE}.ASSIGNED_GROUP
   
   - dimension: affected_ci
     type: string
