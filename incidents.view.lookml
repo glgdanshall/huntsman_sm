@@ -66,6 +66,11 @@
     type: string
     sql: ${TABLE}.PRODUCT_TYPE
     
+  - dimension: update_time
+    type: time
+    timeframes: [time, date, week, month, year]
+    sql: ${TABLE}.UPDATE_TIME
+    
   - measure: count
     type: count
   
