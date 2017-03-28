@@ -56,7 +56,7 @@
   
   - dimension: status
     type: string
-    sql: ${TABLE}.PROBLEM_STATUS
+    sql: ${TABLE}.STATUS
     
   - dimension: open_closed
     type: string
