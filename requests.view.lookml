@@ -21,14 +21,14 @@
     
   - dimension: priority
     type: number
-    sql: ${TABLE}.PRIORITY_CODE
+    sql: ${TABLE}.PRIORITY
     
   - dimension: priority_text
     sql_case:
-      Low: ${TABLE}.PRIORITY_CODE=4
-      Average: ${TABLE}.PRIORITY_CODE=3
-      High: ${TABLE}.PRIORITY_CODE=2
-      Critical: ${TABLE}.PRIORITY_CODE=1
+      Low: ${TABLE}.PRIORITY=4
+      Average: ${TABLE}.PRIORITY=3
+      High: ${TABLE}.PRIORITY=2
+      Critical: ${TABLE}.PRIORITY=1
     
   - dimension: urgency
     type: number
@@ -93,7 +93,7 @@
     - category
     - subcategory
     - status
-    - priority
+    - priority_text
     - assignment
     
 # # You can specify the table name if it's different from the view name:
