@@ -85,7 +85,16 @@
     
   - measure: count
     type: count
-  
+    drill_fields: [request_details*]
+  sets: 
+    request_details:
+    - id
+    - open_time
+    - category
+    - subcategory
+    - status
+    - priority
+    - assignment
     
 # # You can specify the table name if it's different from the view name:
 #   sql_table_name: my_schema_name.incidents
