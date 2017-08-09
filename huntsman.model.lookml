@@ -13,3 +13,8 @@
       foreign_key: interactions.id
       
 - explore: requests
+
+- explore: SLA
+  joins:
+    - join: SLA_Monthly_Average
+      foreign_key: SLA.id
