@@ -4,7 +4,7 @@
   - dimension: id
     primary_key: true
     type: string
-    sql: ${TABLE}.INCIDENT_ID
+    sql: ${TABLE}.NUMBER
     
   - dimension: category
     type: string
