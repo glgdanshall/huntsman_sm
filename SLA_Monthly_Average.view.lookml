@@ -7,9 +7,6 @@
     type: string
     sql: ${TABLE}.AGREEMENT_ID
   
-  - dimension: month
-    sql: ${TABLE}.MONTH
-  
   - dimension: time_period
     hidden: true
     type: time
