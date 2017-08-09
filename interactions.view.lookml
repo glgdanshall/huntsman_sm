@@ -1,4 +1,5 @@
 - view: interactions
+  
   sql_table_name: dbo.INCIDENTSM1
   fields:
   - dimension: id
@@ -82,6 +83,16 @@
     
   - measure: count
     type: count
+    drill_fields: [interaction_details*]
+  sets: 
+    interaction_details:
+    - id
+    - open_time
+    - category
+    - area
+    - status
+    - priority
+    - update_time
   
     
 # # You can specify the table name if it's different from the view name:
