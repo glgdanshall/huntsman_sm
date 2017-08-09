@@ -17,7 +17,7 @@
         )
     datatype: date
     
-  - dimension: overall_average
+  - dimension: overall_avg
     type: number
     hidden: true
     value_format: '0.00\%'

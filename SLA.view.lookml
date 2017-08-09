@@ -11,7 +11,7 @@
     
   - measure: overall_average
     type: average
-    sql: ${TABLE}.overall_average
+    sql: ${SLA_Monthly_Average.overall_avg}
   
   # # You can specify the table name if it's different from the view name:
   # sql_table_name: my_schema_name.sla
