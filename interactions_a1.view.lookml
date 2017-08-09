@@ -2,11 +2,13 @@
   sql_table_name: dbo.INCIDENTSA1
   fields:
   - dimension: id
+    hidden: true
     primary_key: true
     type: string
     sql: ${TABLE}.INCIDENT_ID
   
   - dimension: assignment
+    hidden: true
     sql: ${TABLE}.ASSIGNMENT
 
 # # You can specify the table name if it's different from the view name:
