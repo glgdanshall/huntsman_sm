@@ -20,7 +20,6 @@
   - dimension: overall_avg
     type: number
     hidden: true
-    value_format: '0.00\%'
     sql: ${TABLE}.OAVERAGE
     
     
